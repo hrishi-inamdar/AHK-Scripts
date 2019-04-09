@@ -1,5 +1,5 @@
 # AHK-Scripts
-Useful macros and other cool tools I use for automation and stuff. Everything is a WIP and there's no guarantee of functionality. 
+Useful macros and other cool tools I use for automation and stuff. Everything is a WIP and there's no guarantee of functionality. Requires ahk to work.
 
 # File Descriptions (WIP)
 ## LeagueController
