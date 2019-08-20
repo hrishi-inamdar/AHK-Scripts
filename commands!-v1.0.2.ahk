@@ -201,6 +201,7 @@ return
 ::!3/4::¾
 
 ;sets
+::!empty::∅
 ::!emptyset::∅
 ::!nullset::∅
 ::!inter::∩
@@ -229,6 +230,7 @@ return
 ::!aleph::ℵ
 ::!powerset::℘
 ::!powset::℘
+::!F::𝓕
 
 ;comparisons
 ::!!=::≠
