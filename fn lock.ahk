@@ -1,12 +1,49 @@
 #InstallKeybdHook
+#NoEnv
 
-F4::Volume_Mute
-Volume_Mute::F4
+global mute:="", down:="", up:=""
 
-F2::Volume_Down
-Volume_Down::F2
+if (%A_ComputerName% = COMPOOTER)
+{
+	mute = F10
+	down = F11
+	up = F12
+}
+else 
+{
+	mute = F4
+	down = F2
+	up = F3
+}
 
-F3::Volume_Up
-Volume_Up::F3
+; for volume mute
+Hotkey, $%mute%, LVolume_Mute
+LVolume_Mute() {
+	Send, {Volume_Mute}
+}
+Hotkey, $Volume_Mute, Lmute
+Lmute() {
+	Send, {%mute%}
+}
+
+; for volume down
+Hotkey, $%down%, LVolume_Down
+LVolume_Down() {
+	Send, {Volume_Down}
+}
+Hotkey, $Volume_Down, Ldown
+Ldown() {
+	Send, {%down%}
+}
+
+; for volume up
+Hotkey, $%up%, LVolume_Up
+LVolume_Up() {
+	Send, {Volume_Up}
+}
+Hotkey, $Volume_Up, Lup
+Lup() {
+	Send, {%up%}
+}
 
 !x::exitapp
